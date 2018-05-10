@@ -10,9 +10,9 @@
 
 var Fabric_Client = require('fabric-client');
 var Fabric_CA_Client = require('fabric-ca-client');
-var profile = require('./ConnectionProfile.json');
 var path = require('path');
 var util = require('util');
+var utils = require('./utils.js');
 var os = require('os');
 
 //
@@ -40,10 +40,10 @@ Fabric_Client.newDefaultKeyValueStore({ path: store_path
     };
     // be sure to change the http to https when the CA is running TLS enabled
     //TODO: read form cp
-    fabric_ca_client = new Fabric_CA_Client('https://n1fae425813bf4fb89abe90bcec43addf-org1-ca.us2.blockchain.ibm.com:31011', tlsOptions , 'org1CA', crypto_suite);
+    fabric_ca_client = new Fabric_CA_Client(utils.getCAUrl(), tlsOptions , utils.getCAName(), crypto_suite);
 
     // first check to see if the admin is already enrolled
-    return fabric_client.getUserContext('admin', true);
+    return fabric_client.getUserContext(utils.getAdminID(), true);
 }).then((user_from_store) => {
     if (user_from_store && user_from_store.isEnrolled()) {
         console.log('Successfully loaded admin from persistence');
@@ -52,13 +52,13 @@ Fabric_Client.newDefaultKeyValueStore({ path: store_path
     } else {
         // need to enroll it with CA server
         return fabric_ca_client.enroll({
-          enrollmentID: 'admin',
-          enrollmentSecret: '2dd7653bb6' //TODO: read form cp
+          enrollmentID: utils.getAdminID(),
+          enrollmentSecret: utils.getAdminSecret() //TODO: read form cp
         }).then((enrollment) => {
           console.log('Successfully enrolled admin user "admin"');
           return fabric_client.createUser(
-              {username: 'admin',
-                  mspid: 'org1',
+              {username: utils.getAdminID(),
+                  mspid: utils.getMSP(),
                   cryptoContent: { privateKeyPEM: enrollment.key.toBytes(), signedCertPEM: enrollment.certificate }
               });
         }).then((user) => {

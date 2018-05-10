@@ -1,7 +1,7 @@
 {
-    "name": "Olympus Network - OEu",
+    "name": "Matterhorn Network - 2Y-",
     "description": "Connection Profile for an IBM Blockchain Platform Network",
-    "x-networkId": "n1fae425813bf4fb89abe90bcec43addf",
+    "x-networkId": "n98c540086c996e21b7a376d0da23eb1b",
     "x-fabricVersion": "v1.1.0",
     "version": "1.0.3",
     "client": {
@@ -36,7 +36,7 @@
                 "org1-ca"
             ],
             "signedCert": {
-                "pem": "-----BEGIN CERTIFICATE-----\nMIICaDCCAg+gAwIBAgIUKSSpSzY/AjUzlwhxOY1rADY73sgwCgYIKoZIzj0EAwIw\nbzELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMSAwHgYDVQQDExdmYWJyaWMt\nY2Etc2VydmVyLW9yZzFDQTAeFw0xODA1MDkyMTAyMDBaFw0xOTA1MDkyMTA3MDBa\nMDMxHDANBgNVBAsTBmNsaWVudDALBgNVBAsTBG9yZzExEzARBgNVBAMMCm9yZzFf\nYWRtaW4wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAR48gRDaAcsbvQaeWevhWIX\nX7nDr1Rs+3wBKZQHPU60uHp2Okiq59Rzv5YZcMhYUNdliMF7fETpaEEqRPMivj5o\no4HEMIHBMA4GA1UdDwEB/wQEAwIHgDAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBSs\nWYDws7Zb0ODuq4zNnSlzyTA40jAfBgNVHSMEGDAWgBRNqp20pOLX2Pd9mTfAXBQi\nfT3PszBhBggqAwQFBgcIAQRVeyJhdHRycyI6eyJoZi5BZmZpbGlhdGlvbiI6Im9y\nZzEiLCJoZi5FbnJvbGxtZW50SUQiOiJvcmcxX2FkbWluIiwiaGYuVHlwZSI6ImNs\naWVudCJ9fTAKBggqhkjOPQQDAgNHADBEAiB84SMwzhz3d+/gfHf3vVX5rHHMqfKl\n/YquBRSRM18ciAIgC2GfgyOXsqriJWfFcuLGITqQxoUEbArk2OSz76YPAdw=\n-----END CERTIFICATE-----\n",
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICaDCCAg+gAwIBAgIUC7MMDaA+SJyE8Uat5Wi9Jh+g924wCgYIKoZIzj0EAwIw\nbzELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMSAwHgYDVQQDExdmYWJyaWMt\nY2Etc2VydmVyLW9yZzFDQTAeFw0xODA1MTAxMzQzMDBaFw0xOTA1MTAxMzQ4MDBa\nMDMxHDANBgNVBAsTBmNsaWVudDALBgNVBAsTBG9yZzExEzARBgNVBAMMCm9yZzFf\nYWRtaW4wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQf8zCqlVzRNKtDVb18CNVm\nTeNpQoUH5h3suYcCbimCJ71fhZcrC+8jGuzPtdP2MifD9OOoi2sMT1VVOe6gKdLi\no4HEMIHBMA4GA1UdDwEB/wQEAwIHgDAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBQg\nrVFNyuqasraeqFqUyFl+DR8iGDAfBgNVHSMEGDAWgBSf4MFtH02tu0MuUmzeHVJF\n4OrDfDBhBggqAwQFBgcIAQRVeyJhdHRycyI6eyJoZi5BZmZpbGlhdGlvbiI6Im9y\nZzEiLCJoZi5FbnJvbGxtZW50SUQiOiJvcmcxX2FkbWluIiwiaGYuVHlwZSI6ImNs\naWVudCJ9fTAKBggqhkjOPQQDAgNHADBEAiBGOBAi0o+hI8ZcFS2h20uFQ+zLC/KB\nsLsfKI1AVlR3bAIgD7eGVNb8z1L0FiHfkNk8PaYXCNh9Pgq6afpMRjPlsLg=\n-----END CERTIFICATE-----\n",
                 "x-name": "default"
             },
             "x-uploadedSignedCerts": []
@@ -44,7 +44,7 @@
     },
     "orderers": {
         "orderer": {
-            "url": "grpcs://n1fae425813bf4fb89abe90bcec43addf-orderer.us2.blockchain.ibm.com:31001",
+            "url": "grpcs://n98c540086c996e21b7a376d0da23eb1b-orderer.us.blockchain.ibm.com:31001",
             "grpcOptions": {
                 "grpc.http2.keepalive_time": 360,
                 "grpc.keepalive_time_ms": 360000,
@@ -58,8 +58,8 @@
     },
     "peers": {
         "org1-peer1": {
-            "url": "grpcs://n1fae425813bf4fb89abe90bcec43addf-org1-peer1.us2.blockchain.ibm.com:31002",
-            "eventUrl": "grpcs://n1fae425813bf4fb89abe90bcec43addf-org1-peer1.us2.blockchain.ibm.com:31003",
+            "url": "grpcs://n98c540086c996e21b7a376d0da23eb1b-org1-peer1.us.blockchain.ibm.com:31002",
+            "eventUrl": "grpcs://n98c540086c996e21b7a376d0da23eb1b-org1-peer1.us.blockchain.ibm.com:31003",
             "grpcOptions": {
                 "grpc.http2.keepalive_time": 360,
                 "grpc.keepalive_time_ms": 360000,
@@ -74,8 +74,8 @@
             "x-installed-chaincode": {}
         },
         "org2-peer1": {
-            "url": "grpcs://n1fae425813bf4fb89abe90bcec43addf-org2-peer1.us2.blockchain.ibm.com:31002",
-            "eventUrl": "grpcs://n1fae425813bf4fb89abe90bcec43addf-org2-peer1.us2.blockchain.ibm.com:31003",
+            "url": "grpcs://n98c540086c996e21b7a376d0da23eb1b-org2-peer1.us.blockchain.ibm.com:31002",
+            "eventUrl": "grpcs://n98c540086c996e21b7a376d0da23eb1b-org2-peer1.us.blockchain.ibm.com:31003",
             "grpcOptions": {
                 "grpc.http2.keepalive_time": 360,
                 "grpc.keepalive_time_ms": 360000,
@@ -91,7 +91,7 @@
     },
     "certificateAuthorities": {
         "org1-ca": {
-            "url": "https://n1fae425813bf4fb89abe90bcec43addf-org1-ca.us2.blockchain.ibm.com:31011",
+            "url": "https://n98c540086c996e21b7a376d0da23eb1b-org1-ca.us.blockchain.ibm.com:31011",
             "httpOptions": {
                 "verify": true
             },
@@ -101,7 +101,7 @@
             "registrar": [
                 {
                     "enrollId": "admin",
-                    "enrollSecret": "2dd7653bb6"
+                    "enrollSecret": "f305f24f15"
                 }
             ],
             "caName": "org1CA",

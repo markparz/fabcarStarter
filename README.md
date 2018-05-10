@@ -14,15 +14,15 @@ Step 3: Install node modules with the following command
 Step 4: Run the app
        (Ignore docker commands, http://hyperledger-fabric.readthedocs.io/en/latest/write_first_app.html?highlight=fabcar#enrolling-the-admin-user)
  
-    ```
+
     node enrollAdmin.js
     node registerUser.js  
-    ```
 
-    Then follow the instructions from here
+
+    Then on follow the instructions from here:
 
     http://hyperledger-fabric.readthedocs.io/en/latest/write_first_app.html?highlight=fabcar#querying-the-ledger
     
 
-
+s
 

@@ -1,3 +1,0 @@
-
-var profile = require ('./ConnectionProfile.json');
-console.log(profile.peers.["org1-peer1"])
