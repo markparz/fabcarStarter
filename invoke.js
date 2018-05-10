@@ -19,9 +19,9 @@ var fabric_client = new Fabric_Client();
 
 // setup the fabric network
 var channel = fabric_client.newChannel(utils.getChannelName());
-var peer = fabric_client.newPeer(utils.getPeerUrl(), urils.getGrpcOpts());
+var peer = fabric_client.newPeer(utils.getPeerUrl(), utils.getGrpcOpts());
 channel.addPeer(peer);
-var order = fabric_client.newOrderer(utils.getOrdererUrl(), urils.getGrpcOpts())
+var order = fabric_client.newOrderer(utils.getOrdererUrl(), utils.getGrpcOpts())
 channel.addOrderer(order);
 
 //

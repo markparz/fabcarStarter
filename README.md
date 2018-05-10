@@ -1,6 +1,8 @@
 # Run fabcar sample on IBM Starter Network Plan
 
 
+Pre-req: Created a starter plan and installed fabcar chaincode with name "fabcar"
+        chaincode can be found here: https://github.com/hyperledger/fabric-samples/tree/master/chaincode/fabcar/go
 Step 1: clone the repo
 
 ```git clone https://github.com/asararatnakar/fabcarStarter.git```
