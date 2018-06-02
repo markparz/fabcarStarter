@@ -2,7 +2,10 @@
 
 
 Pre-req: 
-* Create a IBM Starter plan on Bluemix at https://console.bluemix.net/catalog/services/blockchain
+
+Set up your IBM Blockchain Platform network on the IBM Cloud Environment:
+* While this sample can be run on either IBM Starter Plan or the IBM Enterprise plan, this is a sample to learn some of the basics so I would suggest using the Starter Plan. Create a IBM Starter plan on Bluemix at https://console.bluemix.net/catalog/services/blockchain
+
 * Install & Instantiate fabcar chaincode with chiancode name "fabcar" (chaincode can be found here: https://github.com/hyperledger/fabric-samples/tree/master/chaincode/fabcar/go)
 
 Step 1: clone the repo
