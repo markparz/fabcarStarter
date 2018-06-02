@@ -1,9 +1,9 @@
 # Run Hello World sample on IBM Starter Network Plan
 
 
-Pre-req: Create a IBM Starter plan on Bluemix at https://console.bluemix.net/catalog/services/blockchain
-         Install & Instantiate fabcar chaincode with chiancode name "fabcar"
-         (chaincode can be found here: https://github.com/hyperledger/fabric-samples/tree/master/chaincode/fabcar/go)
+Pre-req: 
+* Create a IBM Starter plan on Bluemix at https://console.bluemix.net/catalog/services/blockchain
+* Install & Instantiate fabcar chaincode with chiancode name "fabcar" (chaincode can be found here: https://github.com/hyperledger/fabric-samples/tree/master/chaincode/fabcar/go)
 
 Step 1: clone the repo
 
