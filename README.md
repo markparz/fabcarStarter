@@ -35,6 +35,9 @@ Step 4: Run the app
 
     node enrollAdmin.js
     node registerUser.js  
+    
+    node invoke.js
+    node query.js
 
 
     Then on follow the instructions from here:
